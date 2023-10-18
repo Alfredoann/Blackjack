@@ -13,11 +13,11 @@ const miModulo = (() => {
             btnDetener = document.querySelector('#btnDetener');
             
         
-        const divCartasJugadores = document.querySelector('.divCartas'),
-         puntosHTML = document.querySelectorAll('small');
+        const divCartasJugadores = document.querySelectorAll('.divCartas'),
+            puntosHTML = document.querySelectorAll('small');
         
          const inicializarJuego = (numJugadores = 2) => {
-             deck =crearDeck();
+             deck = crearDeck();
 
 
           puntosJugadores = [];
@@ -46,7 +46,7 @@ const miModulo = (() => {
             }
         }
         
-        return _.shuffle(deck);;
+        return _.shuffle( deck );;
         }
         
         const pedirCarta = () => {
@@ -95,6 +95,9 @@ const miModulo = (() => {
             }, 100 );
     
         }
+
+
+        
         const turnoComputadora = (puntosMinimos) => {
             
             let puntosComputadora =0;
